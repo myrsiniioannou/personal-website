@@ -37,7 +37,9 @@ const Video = (props: any) => {
     );
   }
 
-  return <div className="relative h-0 pb-[56.25%] overflow-hidden">{video}</div>;
+  return (
+    <div className="relative h-0 pb-[56.25%] overflow-hidden">{video}</div>
+  );
 };
 
 export default Video;

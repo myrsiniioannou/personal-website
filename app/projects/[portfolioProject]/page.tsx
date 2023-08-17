@@ -52,9 +52,7 @@ const projectPage = (props: any) => {
       <div className="">
         <Carousel project={project} images={content.images}></Carousel>
       </div>
-      <div className="pt-12 xl:pt-24 ">
-        <Video projecTitle={content.title}></Video>
-      </div>
+
     </div>
   );
 };

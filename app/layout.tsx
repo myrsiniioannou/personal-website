@@ -24,6 +24,10 @@ export default function RootLayout({
     <html lang="en" className={font.className}>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <meta
+          http-equiv="Permissions-Policy"
+          content="interest-cohort=()"
+        ></meta>
       </head>
 
       <body className="overflow-hidden">
@@ -32,7 +36,8 @@ export default function RootLayout({
             <div className="grid lg:grid-cols-2 h-full">
               <h1 className="font-bold text-3xl lg:text-5xl col-span-2">
                 <Link href="/" className="flex justify-between w-full">
-                  <span className="">MYRSINI</span> <span className="">IOANNOU</span>
+                  <span className="">MYRSINI</span>{" "}
+                  <span className="">IOANNOU</span>
                 </Link>
               </h1>
               <p className="col-span-2 py-12">
