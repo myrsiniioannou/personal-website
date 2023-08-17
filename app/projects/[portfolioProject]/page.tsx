@@ -39,7 +39,22 @@ const projectPage = (props: any) => {
 
   return (
     <div className="flex-1 flex-col h-full overflow-y-auto">
-
+      <Link href="/" className="flex font-bold text-3xl pt-6">
+        &#8592;
+      </Link>
+      <div className="">
+        <h1 className="flex font-bold text-5xl pt-12 py-6">{content.title}</h1>
+        <h2 className="flex font-bold text-lg">{content.subtitle}</h2>
+        <p className="flex font-bold text-lg">{content.date}</p>
+        <p className="flex font-bold text-lg">Materials: {content.materials}</p>
+      </div>
+      <p className="py-8">{content.content}</p>
+      <div className="">
+        <Carousel project={project} images={content.images}></Carousel>
+      </div>
+      <div className="pt-12 xl:pt-24 ">
+        <Video projecTitle={content.title}></Video>
+      </div>
     </div>
   );
 };
