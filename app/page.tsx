@@ -40,7 +40,7 @@ const getPortfolioProjectTitlesSortedByDate = () => {
 const HomePage = () => {
   const portfolioProjectsMetaData = getPortfolioProjectTitlesSortedByDate();
   const portfolioProject = portfolioProjectsMetaData.map((project) => (
-    <Link href={"projects/" + project.name}>
+    <Link href={`/projects/${project.name}`}>
       <li className="font-bold xl:text-7xl lg:text-6xl md:text-5xl list-none hover:text-neon">
         {project.name.replaceAll("-", " ")}
       </li>
