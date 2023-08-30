@@ -42,10 +42,10 @@ const projectPage = (props: any) => {
 
   return (
     <div className="flex-1 flex-col h-full overflow-y-auto">
-      {/* <Link href="/" className="flex font-bold text-3xl pt-6">
+      <Link href="/" className="flex font-bold text-3xl pt-6">
         &#8592;
       </Link>
-      <div className="">
+      {/* <div className="">
         <h1 className="flex font-bold text-5xl pt-12 py-6">{content.title}</h1>
         <h2 className="flex font-bold text-lg">{content.subtitle}</h2>
         <p className="flex font-bold text-lg">{content.date}</p>
