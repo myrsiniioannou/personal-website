@@ -47,15 +47,15 @@ const projectPage = (props: any) => {
       </Link>
       <div className="">
         <h1 className="flex font-bold text-5xl pt-12 py-6">{content.title}</h1>
-        <h2 className="flex font-bold text-lg">{content.subtitle}</h2>
+        {/* <h2 className="flex font-bold text-lg">{content.subtitle}</h2>
         <p className="flex font-bold text-lg">{content.date}</p>
-        <p className="flex font-bold text-lg">Materials: {content.materials}</p>
+        <p className="flex font-bold text-lg">Materials: {content.materials}</p> */}
       </div>
-      <p className="py-8">{content.content}</p>
+      {/* <p className="py-8">{content.content}</p>
       <div className="">
         <Carousel project={project} images={content.images}></Carousel>
       </div>
-      {/* <div className="pt-12 xl:pt-24 ">
+      <div className="pt-12 xl:pt-24 ">
         <Video projecTitle={content.title}></Video>
       </div> */}
     </div>
