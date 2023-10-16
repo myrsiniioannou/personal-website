@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { Metadata } from 'next'
 import "flowbite";
 import { Outfit } from "next/font/google";
 import Link from "next/link";
@@ -10,10 +11,10 @@ const font = Outfit({
   display: "swap",
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Myrsini Ioannou",
-  description: "Portfolio website of Myrsini Ioannou",
-};
+  description: "I work on AI, data, computational media and electronic music",
+}
 
 export default function RootLayout({
   children,
@@ -23,11 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={font.className}>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <meta
-          http-equiv="Permissions-Policy"
-          content="interest-cohort=()"
-        ></meta>
+        <link rel="icon" href="./favicon.ico" sizes="any" />
       </head>
 
       <body className="overflow-hidden">
@@ -36,26 +33,28 @@ export default function RootLayout({
             <div className="grid lg:grid-cols-2 h-full">
               <h1 className="font-bold text-3xl lg:text-5xl col-span-2">
                 <Link href="/" className="flex justify-between w-full">
-                  <span className="">MYRSINI</span>{" "}
+                  <span className="">MYRSINI</span>
                   <span className="">IOANNOU</span>
                 </Link>
               </h1>
               <p className="col-span-2 py-12">
                 I work on AI, data, computational media and electronic music,
-                focusing on real-tome procedures, NLP and generative art.
+                focusing on real-time procedures, NLP and generative art.
               </p>
               <div className="grid justify-items-start content-between -ml-2.5 lg:-ml-3">
-                <div className="rotate-180 content-end">
-                  <h2 className="flex font-bold text-xl lg:text-2xl [writing-mode:vertical-rl] pt-6">
-                    hello@myrsiniioannou.com
+                <div className="content-end">
+                  <h2 className="flex font-bold text-xl lg:text-2xl pt-6" id="email">
+                    <Link href="mailto: hello@myrsiniioannou.com">
+                      hello@myrsiniioannou.com
+                    </Link>
                   </h2>
                 </div>
-                <div className="rotate-180">
-                  <span className="flex font-bold text-xl lg:text-2xl rotate-90">
-                    ©
-                  </span>
-                  <span className="flex font-bold text-xl lg:text-2xl [writing-mode:vertical-rl]">
+                <div className="flex flex-col">
+                  <span className="flex font-bold text-xl lg:text-2xl" id="year">
                     2023
+                  </span>
+                  <span className="flex font-bold text-xl lg:text-2xl" id="copyright">
+                    ©
                   </span>
                 </div>
               </div>
@@ -69,7 +68,7 @@ export default function RootLayout({
             </div>
           </div>
 
-          <div className="right lg:flex-1 self-start box-border lg:h-full">
+          <div className="right lg:flex-1 self-start box-border lg:h-full  w-full">
             {children}
           </div>
         </div>

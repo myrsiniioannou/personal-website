@@ -7,7 +7,7 @@ const Carousel = (props: any) => {
   const HTMLCodeprojectImages = images.map((image: string) => (
     <div className="h-full">
       <Image
-        className="object-scale-down"
+        className="object-contain"
         priority={true}
         alt={image}
         fill={true}
@@ -17,15 +17,13 @@ const Carousel = (props: any) => {
   ));
 
   return (
-    <div className="xl:h-screen h-[50vh]">
       <FlowbiteCarousel
-        className="pb-0"
+        className="mt-20 h-[100vh]"
         slideInterval={50000}
         indicators={false}
       >
         {HTMLCodeprojectImages}
       </FlowbiteCarousel>
-    </div>
   );
 };
 

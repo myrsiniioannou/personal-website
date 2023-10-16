@@ -41,13 +41,13 @@ const HomePage = () => {
   const portfolioProjectsMetaData = getPortfolioProjectTitlesSortedByDate();
   const portfolioProject = portfolioProjectsMetaData.map((project) => (
     <Link href={`/projects/${project.name}`}>
-      <li className="font-bold xl:text-7xl lg:text-6xl md:text-5xl list-none hover:text-neon">
+      <li className="font-bold xl:text-7xl lg:text-6xl md:text-5xl list-none hover:text-neon max-lg:text-center">
         {project.name.replaceAll("-", " ")}
       </li>
     </Link>
   ));
   return (
-    <div className="flex flex-col h-full justify-center text-3xl lg:text-5xl py-14 lg:py-0">
+    <div className="flex flex-col h-full justify-center max-lg:text-5xl text-3xl py-16 lg:py-0">
       {portfolioProject}
     </div>
   );

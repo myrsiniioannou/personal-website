@@ -16,25 +16,40 @@
 
 [data-testid="carousel-right-control"] > span,
 [data-testid="carousel-left-control"] > span {
-  background-color: #F7F7F7 !important;
+  background-color: #f7f7f7 !important;
   width: 2rem !important;
   height: 2rem !important;
 }
 
 [data-testid="carousel-right-control"]:hover > span,
 [data-testid="carousel-left-control"]:hover > span {
-  background-color: white!important;
+  background-color: white !important;
 }
 
 [data-testid="carousel-left-control"]:focus > span,
 [data-testid="carousel-right-control"]:focus > span {
-  outline: none!important;
-  box-shadow: none!important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 [data-testid="carousel-right-control"] svg,
 [data-testid="carousel-left-control"] svg {
-  color: gray!important;
+  color: gray !important;
+}
+
+.lg\:text-2xl {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+#copyright {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 @media (min-width: 1024px) {

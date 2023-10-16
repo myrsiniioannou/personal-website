@@ -24,8 +24,8 @@ const Video = (props: any) => {
     video = (
       <ReactPlayer
         width={""}
-        height={""}
-        className="absolute inset-0"
+        height={"60vh"}
+        className="inset-0"
         url={videoUrl}
         volume={1}
         config={{
@@ -41,7 +41,7 @@ const Video = (props: any) => {
   }
 
   return (
-    <div className="relative h-0 pb-[56.25%] overflow-hidden">{video}</div>
+    <div className="mt-20">{video}</div>
   );
 };
 
