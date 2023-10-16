@@ -18,7 +18,7 @@ const Carousel = (props: any) => {
 
   return (
       <FlowbiteCarousel
-        className="mt-20 h-[100vh]"
+        className="md:mt-10 mt-20 h-[100vh]"
         slideInterval={50000}
         indicators={false}
       >

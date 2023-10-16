@@ -41,7 +41,7 @@ const Video = (props: any) => {
   }
 
   return (
-    <div className="mt-20">{video}</div>
+    <div className="md:mt-10 mt-20">{video}</div>
   );
 };
 
