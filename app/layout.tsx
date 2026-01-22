@@ -51,7 +51,7 @@ export default function RootLayout({
                 </div>
                 <div className="flex flex-col">
                   <span className="flex font-bold text-xl lg:text-2xl" id="year">
-                    2025
+                    2026
                   </span>
                   <span className="flex font-bold text-xl lg:text-2xl" id="copyright">
                     ©
