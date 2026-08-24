@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { Metadata } from 'next'
 import "flowbite";
+import "../src/app/globals.css";
 import { Outfit } from "next/font/google";
 import Link from "next/link";
 

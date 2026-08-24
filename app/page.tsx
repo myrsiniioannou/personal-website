@@ -2,8 +2,6 @@ import fs from "fs";
 import Link from "next/link";
 import path from "path";
 import matter from "gray-matter";
-import "tailwindcss/tailwind.css";
-import "../src/app/globals.css";
 
 const getPortfolioProjectTitlesSortedByDate = () => {
   const directoryPath = "public/portfolio/";
